@@ -2,18 +2,20 @@ import React from "react";
 
 import './link.css';
 
-const Link = ({links}) => {
+const Link = ({links,style}) => {
+
+    const {block} = style;
 
     const itemLink = links.map(item => {
-        const {id, target, url, name} = item;
+        const {id, target, url, name, classItem} = item;
 
         return (
-            <a className={'link-item'} href={url} target={target} key={id}>{name}</a>
+            <a className={classItem} href={url} target={target} key={id}>{name}</a>
         );
     })
 
     return (
-        <div className={'header-links'}>
+        <div className={block}>
             {itemLink}
         </div>
     );

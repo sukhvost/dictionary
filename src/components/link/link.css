@@ -1,12 +1,11 @@
 .header-links {
-    width: 80%;
-    text-align: end;
+    max-width: 80%;
+    margin-left: auto;
 }
 
 .link-item {
     display: inline-block;
-    width: 30%;
-    margin-left: auto;
+    margin-left: 2rem;
     text-decoration: none;
     color: cornflowerblue;
 }

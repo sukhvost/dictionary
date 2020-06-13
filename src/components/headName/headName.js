@@ -2,9 +2,10 @@ import React from "react";
 
 import './headName.css';
 
-const HeadName = () => {
+const HeadName = ({descr}) => {
+    const {description, classes} = descr;
     return (
-        <div></div>
+        <h1 className={classes}>{description}</h1>
     );
 }
 

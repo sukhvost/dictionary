@@ -8,9 +8,7 @@ const Logo = ({img}) => {
     const path = './imgs/';
 
     return (
-        <div className={'header-logo'}>
-            <img src={`${path}${url}`} alt={'logo flag'}/>
-        </div>
+        <img src={`${path}${url}`} alt={'logo flag'}/>
     );
 }
 

@@ -2,9 +2,12 @@ import React from "react";
 
 import './searchPanel.css';
 
-const SearchPanel = () => {
+const SearchPanel = ({datas}) => {
+
+    const {type, placeholder} = datas;
+
     return (
-        <div></div>
+        <input type={type} placeholder={placeholder}/>
     );
 }
 

@@ -2,9 +2,19 @@ import React from "react";
 
 import './filterTypeWord.css';
 
-const FilterTypeWord = () => {
+const FilterTypeWord = ({types}) => {
+
+    const typeWord = types.map(item => {
+        const {type} = item;
+        return (
+            <option value={type}>{type}</option>
+        );
+    });
+
     return (
-        <div></div>
+        <select>
+            {typeWord}
+        </select>
     );
 }
 

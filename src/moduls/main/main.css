@@ -1,0 +1,27 @@
+.main-input-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: cornflowerblue;
+}
+.main-search-panel input {
+    height: 1.7rem;
+    border: none;
+    outline-color: #38c0ff;
+    background: cornflowerblue;
+    padding: 0 1rem;
+}
+.main-type-word {
+    height: 1.7rem;
+}
+select {
+    height: 1.7rem;
+    border: none;
+    outline: none;
+    background: cornflowerblue;
+    padding-right: 1rem;
+}
+option {
+    background: #FFFFFF;
+    padding: 0 .8rem;
+}
