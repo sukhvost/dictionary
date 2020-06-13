@@ -2,10 +2,14 @@ import React from "react";
 
 import './logo.css';
 
-const Logo = () => {
+const Logo = ({img}) => {
+
+    const url = img.img;
+    const path = './imgs/';
+
     return (
         <div className={'header-logo'}>
-            <img src={'#'} alt={'some'}/>
+            <img src={`${path}${url}`} alt={'logo flag'}/>
         </div>
     );
 }
