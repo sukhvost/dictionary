@@ -1,0 +1,10 @@
+.main-add-word-wrap {
+    background: cornflowerblue;
+}
+.main-add-word-wrap input {
+    width: 50%;
+    padding: 0 1rem;
+    border: none;
+    outline: none;
+    background: cornflowerblue;
+}

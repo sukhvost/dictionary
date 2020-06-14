@@ -5,13 +5,13 @@ import './itemWord.css';
 
 const descriptionPlaceData = [{name: 'cat'}, {name: 'кот'}];
 
-const classesDescription = {classItem: 'description_item', classBlock: 'main-description-wrap'}
+const classesDescription = {classItem: 'word_item', classBlock: 'word-wrap'}
 
 const ItemWord = () => {
     return (
-        <div>
+        <div className={'main-word-wrap'}>
             <DescriptionPlace names={descriptionPlaceData} classes={classesDescription}/>
-            <div>dfg</div>
+            <div className={'btn-wrap'}>dfg</div>
         </div>
     );
 }

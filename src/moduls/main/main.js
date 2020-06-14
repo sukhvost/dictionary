@@ -3,6 +3,7 @@ import SearchPanel from "../../components/searchPanel";
 import FilterTypeWord from "../../components/filterTypeWord";
 import DescriptionPlace from "../../components/descriptionPlace";
 import ItemWord from "../../components/itemWord";
+import AddPanel from "../../components/addPanel";
 
 import './main.css'
 
@@ -39,6 +40,8 @@ const Main = () => {
             </div>
             <DescriptionPlace names={descriptionPlaceData} classes={classesDescription}/>
             <ItemWord/>
+            <AddPanel/>
+
         </main>
     );
 }
