@@ -1,6 +1,8 @@
 import React from "react";
 import SearchPanel from "../../components/searchPanel";
 import FilterTypeWord from "../../components/filterTypeWord";
+import DescriptionPlace from "../../components/descriptionPlace";
+import ItemWord from "../../components/itemWord";
 
 import './main.css'
 
@@ -21,6 +23,10 @@ const Main = () => {
         {type: 'num'}
     ];
 
+    const descriptionPlaceData = [{name: 'word'}, {name: 'translate'}];
+
+    const classesDescription = {classItem: 'description_item', classBlock: 'main-description-wrap'}
+
     return (
         <main className={'main-app'}>
             <div className={'main-input-wrap'}>
@@ -31,7 +37,8 @@ const Main = () => {
                     <FilterTypeWord types={typeWord}/>
                 </div>
             </div>
-
+            <DescriptionPlace names={descriptionPlaceData} classes={classesDescription}/>
+            <ItemWord/>
         </main>
     );
 }

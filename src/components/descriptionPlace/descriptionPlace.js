@@ -2,9 +2,23 @@ import React from "react";
 
 import './descriptionPlace.css';
 
-const DescriptionPlace = () => {
+const DescriptionPlace = ({names, classes}) => {
+
+    const {classBlock, classItem} = classes;
+
+    const descriptionBlocks = names.map(item => {
+
+        const {name} = item;
+
+        return (
+            <span className={classItem}>{name}</span>
+        )
+    })
+
     return (
-        <div></div>
+        <div className={classBlock}>
+            {descriptionBlocks}
+        </div>
     );
 }
 
